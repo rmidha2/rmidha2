@@ -154,6 +154,20 @@ hr.small {
     -o-background-size: cover;
 }
 
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {  
+    .header h3 {
+        font-size: 20px;
+    }  
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+    .header h3 {
+        font-size: 18px;
+    } 
+}
+
 /* About */
 
 .about {
@@ -175,6 +189,42 @@ hr.small {
    background-repeat: no-repeat;
    background-size: cover;
    margin: auto;
+}
+
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
+
+    .about {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+    .about {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-circle {
+        height: 384px;
+        width: 100%;
+    }
+} 
+
+/* Nexus 5X */
+@media (max-width: 412px) and (max-height: 732px) {
+    
+    .about {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-circle {
+        height: 300px;
+        width: 300px;
+    }
 }
  
 
@@ -231,6 +281,46 @@ hr.small {
 #jQuery {
     display: none;
 }
+
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
+
+    .services {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+    .services {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #jQuery {
+        display: block;
+    }
+
+    .service-item {
+        margin-bottom: 50px;
+    }
+}  
+
+/* Nexus 5X */
+@media (max-width: 412px) and (max-height: 732px) {
+    
+    .services {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #jQuery {
+        display: block;
+    }
+} 
 
 /* iPhone 6*/
 @media (max-width: 375px) and (max-height: 667px) {
@@ -320,9 +410,8 @@ hr.small {
 /* iPad */
 @media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
 
-    .about,.services {
-        height: 50%;
-        width: 100%;
+    #expanded-skills {
+        display: none;
     }
 } 
 
@@ -332,7 +421,6 @@ hr.small {
         display: none;
     }
 } 
-
 
 .western-color {
     color: #521e82;
@@ -350,20 +438,6 @@ hr.small {
     color: #027cf3;
 }
 
-
-/* Callout */
-
-/*.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../images/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}*/
 
 /* Education */
 
@@ -396,7 +470,7 @@ hr.small {
 }
 
 /* iPad */
-@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
     
     .portfolio {
         height: 101%;
@@ -411,6 +485,63 @@ hr.small {
         margin-top: 15px;
     }
 }
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+
+    .Logo {
+        width: 50%;
+        margin-bottom: -20px;
+    }
+
+    .space-desc {
+        margin: auto;
+        text-align: center;
+    } 
+
+    .semi-small {
+        display: block;
+    }
+
+    .courses {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .courses .pull-left {
+        width: 100%;
+        text-align: center;
+    }
+
+} 
+
+/* Nexus 5X */
+@media (max-width: 412px) and (max-height: 732px) {
+    
+    .Logo {
+        width: 50%;
+        margin-bottom: -20px;
+    }
+
+    .space-desc {
+        margin: auto;
+        text-align: center;
+    } 
+
+    .semi-small {
+        display: block;
+    }
+
+    .courses {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .courses .pull-left {
+        width: 100%;
+        text-align: center;
+    }
+} 
 
 /* iPhone 6*/
 @media (max-width: 375px) and (max-height: 667px) {
@@ -438,7 +569,7 @@ hr.small {
         margin-bottom: 15px;
     }
 
-    .pull-left {
+    .courses .pull-left {
         width: 100%;
         text-align: center;
     }
@@ -575,7 +706,7 @@ a:focus {
 }
 
 /* iPad */
-@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
 
     #projects {
         width: 100%;
@@ -589,6 +720,41 @@ a:focus {
         padding-top: 55px;
     }
 
+}
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+
+   #projects {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .preview-project {
+        height: 140px;
+        width: 140px;
+        font-size: 16px;
+        padding-top: 55px;
+    }
+
+} 
+
+/* Nexus 5X */
+@media (max-width: 412px) and (max-height: 732px) {
+
+    #projects {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .preview-project {
+        height: 120px;
+        width: 120px;
+        font-size: 16px;
+        padding-top: 50px;
+    }
 }
 
 /* iPhone 6*/
@@ -656,12 +822,32 @@ a:focus {
 }
 
 /* iPad */
-@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
 
     #contact {
         width: 100%;
         height: 54%;
     }
+}
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+
+    #contact {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+/* Nexus 5X */
+@media (max-width: 412px) and (max-height: 732px) {
+
+    #contact {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    } 
 }
 
 /* iPhone 6*/
@@ -703,6 +889,20 @@ footer {
   right: 5px;
 }
 
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 415px) {
+
+    footer {
+        padding: 100px 0px;
+    } 
+}
+
+/* iPhone 6 Plus*/
+@media (max-width: 414px) and (max-height: 736px) and (min-width: 413px) {
+    footer {
+        padding-bottom: 100px;
+    }  
+} 
 
 /* iPhone 6*/
 @media (max-width: 375px) and (max-height: 667px) {

@@ -238,7 +238,6 @@
     }
     // Anchor Scroll
     $('a[href^="#"]').on('click', function(event) {
-        console.log($(this.getAttribute('href')))
 
         var target = $(this.getAttribute('href'))
 
