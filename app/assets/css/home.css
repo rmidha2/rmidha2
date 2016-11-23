@@ -176,6 +176,28 @@ hr.small {
    background-size: cover;
    margin: auto;
 }
+ 
+
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+    .about {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-circle {
+        height: 345px;
+        width: 100%;
+    }
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+    .img-circle {
+        height: 290px;
+        width: 100%;
+    }
+}
 
 /* Skillset */
 
@@ -206,6 +228,45 @@ hr.small {
     color: #337ab7;
 }
 
+#jQuery {
+    display: none;
+}
+
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+
+    .services {
+        padding: 15px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #jQuery {
+        display: block;
+    }
+
+    .button-holder {
+        margin-top: 30px;
+    }
+
+    .col-xs-4,.col-xs-8 {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+    .service-item {
+        font-size: 10px;
+    }
+
+    .mfizz-icons {
+        font-size: 43px;
+        top: 5px;
+    }
+}
+
 #expanded-skills {
     display: none;
     font-size: 18px;
@@ -233,7 +294,7 @@ hr.small {
 .year-bar {
     font-size:14px;
     height: 20px;
-    background-color: #D7405D;
+    background-color: #EDAC27;
     border-radius: 5px;
     width: 0%;
     display: none;
@@ -242,15 +303,36 @@ hr.small {
 .half-year-bar {
     font-size:14px;
     height: 20px;
-    background-color: #D7405D;
+    background-color: #F7DB1C;
     border-radius: 5px;
     width: 0%;
     display: none;
 }
 
+.second-set {
+    margin-top: -34px;
+}
+
 #close-holder {
     display: none;
 }
+
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+
+    .about,.services {
+        height: 50%;
+        width: 100%;
+    }
+} 
+
+@media (max-width: 768px) and (max-height: 1024px) {
+
+    .button-holder {
+        display: none;
+    }
+} 
+
 
 .western-color {
     color: #521e82;
@@ -271,7 +353,7 @@ hr.small {
 
 /* Callout */
 
-.callout {
+/*.callout {
     display: table;
     width: 100%;
     height: 400px;
@@ -281,7 +363,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+}*/
 
 /* Education */
 
@@ -297,9 +379,74 @@ hr.small {
     margin-top: 25px;
 }
 
+.panel-default {
+    width: 100% !important;
+}
+
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
     cursor: pointer !important;
 }
+
+.Logo {
+    width: 100%;
+}
+
+.semi-small {
+    display: none
+}
+
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+    
+    .portfolio {
+        height: 101%;
+        width: 100%;
+    }
+
+    .space-desc {
+        margin-top: 0px;
+    }
+
+    .portfolio .row .row {
+        margin-top: 15px;
+    }
+}
+
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+
+    .portfolio {
+        padding: 15px;
+    }
+
+    .Logo {
+        width: 50%;
+        margin-bottom: -20px;
+    }
+
+   .space-desc {
+        margin: auto;
+        text-align: center;
+    } 
+
+    .semi-small {
+        display: block;
+    }
+
+    .courses {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .pull-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+} 
 
 #first-year-tab:hover {
     cursor: pointer !important;
@@ -340,10 +487,6 @@ hr.small {
 
 #d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,#d10,#d11,#d12,#d13,#d14,#d15,#d16,#d17,#d18 {
     display: none
-}
-
-.Logo {
-    width: 100%;
 }
 
 /* Projects */
@@ -405,6 +548,14 @@ a:focus {
     margin: auto;
 }
 
+#projects {
+    padding: 50px 0px;
+}
+
+.btn-dark {
+    margin-top: 20px;
+}
+
 /* Call to Action */
 
 .call-to-action {
@@ -422,30 +573,126 @@ a:focus {
 .btn-color:hover {
     background-color: 
 }
-/* Map */
+
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+
+    #projects {
+        width: 100%;
+        height: 50%;
+    }
+
+    .preview-project {
+        height: 150px;
+        width: 150px;
+        font-size: 20px;
+        padding-top: 55px;
+    }
+
+}
+
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+
+    #projects {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .preview-project {
+        height: 120px;
+        width: 120px;
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    .btn-dark {
+        margin-top: 15px;
+    }
+
+    .btn-lg {
+        font-size: 15px;
+    }
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+
+    .preview-project {
+        height: 100px;
+        width: 100px;
+        font-size: 14px;
+        padding-top: 43px;
+    }
+
+    .btn-dark {
+        margin-top: 12px;
+    }
+
+    .btn-lg {
+        font-size: 12px;
+    }
+
+    #projects p {
+        font-size: 12px;
+    }
+
+    #projects hr {
+        margin-bottom: 10px;
+    }
+} 
+
+/* Contact */
 
 #contact {
-    margin-top: 40px;
+    padding: 50px 0px;
 }
 
-.map {
+.type-form-window {
     height: 500px;
+    width: 100%;
+    margin: auto;
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
+/* iPad */
+@media (max-width: 768px) and (max-height: 1024px) and (min-width: 376px) {
+
+    #contact {
+        width: 100%;
+        height: 54%;
     }
 }
 
-.map iframe {
-    pointer-events: none;
-}
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+
+    #contact {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+
+    #contact {
+        padding: 15px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .type-form-window {
+        height: 420px;
+    }
+} 
+
 
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding-bottom: 50px;
 }
 
 #to-top {
@@ -454,4 +701,19 @@ footer {
   bottom: 5px;
   right: 5px;
 }
+
+
+/* iPhone 6*/
+@media (max-width: 375px) and (max-height: 667px) {
+    footer {
+        padding: 0px 100px;
+    }
+} 
+
+ /* iPhone 5*/
+@media (max-width: 320px) and (max-height: 568px) {
+    footer {
+        padding-bottom: 80px;
+    }
+} 
 

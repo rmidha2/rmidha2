@@ -1,37 +1,3 @@
-    // Mail form submit
-    // (function(){
-    //   emailjs.init("user_MRUvj9eURH4gy1DsrtG94");
-    // })();
-    // $('#mail-submit').click(function(e){
-    //     e.preventDefault();
-    //     var name = $('#inputName').val()
-    //     var email = $('#inputEmail').val()
-    //     var message = $('#inputComment').val()
-
-    //     if (name == '') {
-    //         toastr.clear()
-    //         toastr.error('Please fill in your name!', 'Oops!')
-    //     }
-    //     else if (email == '') {
-    //         toastr.clear()
-    //         toastr.error('Please fill in your email!', 'Oops!')
-    //     }
-    //     else if (message == '') {
-    //         toastr.clear()
-    //         toastr.error('Your message is empty!', 'Oops!')
-    //     }
-    //     else {
-    //         toastr.success('Your message has been submitted!')
-    //     // emailjs.send("gmail","template_8o7lgJzi",{"name": String(name), "notes": String(email)})
-    //     //     .then(function(response) {
-    //     //        console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-    //     //     }, function(err) {
-    //     //        console.log("FAILED. error=", err);
-    //     //     });
-    //         clearContact()
-    //     }
-    // })
-
     function clearContact(){
         $('#inputName').val('')
         $('#inputEmail').val('')
@@ -97,7 +63,7 @@
 
         if (target.length) {
             $('body').stop().animate({
-                scrollTop: target.offset().top-100
+                scrollTop: target.offset().top
             }, 1000)
         }
         setTimeout(function(){
@@ -115,6 +81,8 @@
         $('.half-year-bar').animate({
             width: '21%'
         },1000)
+
+
     })
     // Close more skills
     $('#close-skillset').click(function(){
@@ -281,24 +249,3 @@
             }, 1000)
         }
     })
-
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
