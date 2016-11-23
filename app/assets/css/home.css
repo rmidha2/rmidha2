@@ -706,7 +706,7 @@ footer {
 /* iPhone 6*/
 @media (max-width: 375px) and (max-height: 667px) {
     footer {
-        padding: 0px 100px;
+        padding: 100px 0px;
     }
 } 
 
