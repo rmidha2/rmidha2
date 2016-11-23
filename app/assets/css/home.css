@@ -120,7 +120,7 @@ hr.small {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     top: 0;
     right: 0;
@@ -696,6 +696,7 @@ footer {
 }
 
 #to-top {
+    z-index: 10;
   display: none;
   position: fixed;
   bottom: 5px;
