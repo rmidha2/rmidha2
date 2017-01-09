@@ -360,6 +360,8 @@ hr.small {
 #expanded-skills {
     display: none;
     font-size: 18px;
+    height: 0px;
+    width: 1170px;
 }
 
 .margin-bottom-38 {
@@ -667,11 +669,6 @@ a:focus {
 .brainbox:hover {
     background-color: white;
     color: #D7405D;
-    cursor: not-allowed;
-}
-
-.disallow {
-    cursor: not-allowed;
 }
 
 .hold-desc {

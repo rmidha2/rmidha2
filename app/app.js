@@ -1,3 +1,10 @@
+
+    // Open resume
+    $("#resume").click(function(){
+        window.open('assets/RaghavMidhaResume.pdf')
+    })
+
+    // Clear Contact
     function clearContact(){
         $('#inputName').val('')
         $('#inputEmail').val('')
@@ -66,12 +73,15 @@
                 scrollTop: target.offset().top
             }, 1000)
         }
-        setTimeout(function(){
-            $('#expanded-skills').slideDown()
-        },400)
+        
+        $('#expanded-skills').show()
         $('.two-year-bar').show()
         $('.year-bar').show()
         $('.half-year-bar').show()
+        
+        $('#expanded-skills').animate({
+            height: '420px'
+        },1000)
         $('.two-year-bar').animate({
             width: '83.3%'
         },1000)
@@ -90,18 +100,25 @@
         $('#open-holder').show()
 
         $('.two-year-bar').animate({
-            width: '0'
+            width: '0%'
         },1000)
         $('.year-bar').animate({
-            width: '0'
+            width: '0%'
         },1000)
         $('.half-year-bar').animate({
-            width: '0'
+            width: '0%'
+        },1000)
+        $('#expanded-skills').animate({
+            height: '0px'
         },1000)
 
         setTimeout(function(){
-            $('#expanded-skills').slideUp()
-        },400)
+            $('#expanded-skills').hide()
+            $('.two-year-bar').hide()
+            $('.year-bar').hide()
+            $('.half-year-bar').hide()
+            $('#expanded-skills').hide()
+        },970)
 
         var target = $(this.getAttribute('href'))
 
